@@ -1,0 +1,9 @@
+/**
+ Export to JSON plugin for PHPMyAdmin
+ @version 0.1
+ */
+
+// Database 'grand-antares'
+// grand-antares.booking
+
+[{"table_id":"4","id_booking":"120140571","id_cust":"120140563","no_kamar":"201","tipe_booking":"Normal","arrival":"2014-01-01","checkout":"2014-01-05","id_staff":"0","booking_time":"2014-01-05 05:46:51","confirmation":"1","id_num":"79","nama":"Ariana Today Check Out","tgl_lahir":"1995-01-01","alamat":"Redmon, 5A","telepon":"0909","kota":"CA","negara":"NY","kk_num":"0132-8789-2345-1234"}]

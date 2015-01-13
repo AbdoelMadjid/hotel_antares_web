@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>Test Class</title>
+
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/get_database.js" type="text/javascript"></script>
+	<script>
+		$(document).ready(function(e) {
+
+			//var kamar = new AntaresData();
+			//kamar.listDataKamar(2);
+			//document.write(kamar.listDataKamar(2));
+			var kamar = {
+				"status_kamar": [{
+						"no_kamar": 201,
+						"status": "Booked",
+						"jlh": 91
+					}, {
+						"no_kamar": 213,
+						"status": "Available",
+						"jlh": 47
+					}, {
+						"table_id": 96,
+						"id_booking": 12014031,
+						"id_cust": 120140381,
+						"no_kamar": 504,
+						"tipe_booking": "Normal",
+						"arrival": "2014-01-12T17:00:00.000Z",
+						"checkout": "2014-01-21T17:00:00.000Z",
+						"id_staff": 0,
+						"booking_time": "0000-00-00 00:00:00",
+						"confirmation": 0,
+						"id_num": 70,
+						"nama": "Anwar Pasaribu",
+						"tgl_lahir": "2014-01-14T17:00:00.000Z",
+						"alamat": "Jl. Dr. Mansyur No. 70",
+						"telepon": "6285275592337",
+						"kota": "Medan",
+						"negara": "Indonesia",
+						"kk_num": "9090-1234-1234-1234"
+					},
+
+				],
+				"time": "2014-01-04T05:46:51.311Z"
+			};
+
+
+			console.log(JSON.stringify(kamar));
+			console.log(kamar.id_booking);
+
+			$.each(kamar.status_kamar, function(i, kamar) {
+				console.log(i + " : \n" + kamar.no_kamar + kamar.status + kamar.jlh);
+			});
+
+			var data = {
+				'nama': 'Anwar Pasaribu',
+				'nim': '111402208',
+				'id': 47,
+				'socmed': {
+					'fb': 'anwar41000',
+					'twitter': 'anwar_va'
+				}
+			};
+			console.log(JSON.stringify(data));
+
+			//Testing Error Aja, utk menegtahui format url yang dikirim melalu objek javascript
+			//			$.getJSON("asa.php", data, function(){
+			//				alert("Fuck");
+			//			});
+			//document.write(JSON.stringify(data));
+
+			//console.log(data.toLocaleString());
+			//			
+			//			$.each(data, function(key, val){
+			//				if(key === 'id' && val == 47)
+			//					console.log('Cicak Detected');
+			//				console.log(key + ' : ' + val.fb);
+			//				
+			//			});
+			//			
+			//			console.log(data);
+
+
+		});
+	</script>
+
+</head>
+
+<body>
+	<div id="test"></div>
+
+</body>
+
+</html>

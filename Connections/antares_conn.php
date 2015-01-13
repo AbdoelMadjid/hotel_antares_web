@@ -1,0 +1,1 @@
+<?php# FileName="Connection_php_mysql.htm"# Type="MYSQL"# HTTP="true"$hostname_antares_conn = "localhost";$database_antares_conn = "grand-antares";$username_antares_conn = "root";$password_antares_conn = "root";$antares_conn = mysql_pconnect($hostname_antares_conn, $username_antares_conn, $password_antares_conn) or trigger_error(mysql_error(),E_USER_ERROR); ?>
